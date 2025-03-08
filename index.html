@@ -3,35 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fullscreen Video Background</title>
+    <title>Background Video</title>
     <style>
         * {
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            width: 100vw;
-            height: 100vh;
             overflow: hidden;
         }
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: black;
+        }
         video {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            width: 100%;
+            position: absolute;
+            width: 98%;
             height: 100%;
             object-fit: cover;
-            transform: translate(-50%, -50%);
         }
     </style>
 </head>
 <body>
-
-    <video autoplay loop muted playsinline>
+    <video autoplay loop muted>
         <source src="https://github.com/dandan-187/bgmoon/raw/main/bgnote.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
-
 </body>
 </html>
