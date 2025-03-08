@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mobile Background Video</title>
+    <title>Full-Screen Background Video</title>
     <style>
         * {
             margin: 0;
@@ -11,18 +11,14 @@
             box-sizing: border-box;
         }
         body {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            background: black;
             overflow: hidden;
+            background: black;
         }
         video {
-            position: absolute;
+            position: fixed;
             top: 50%;
             left: 50%;
-            width: 80%;
+            width: 100%;
             height: 100%;
             transform: translate(-50%, -50%);
             object-fit: cover;
