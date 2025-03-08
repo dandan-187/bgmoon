@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Background Video</title>
+    <title>Mobile Background Video</title>
     <style>
         * {
             margin: 0;
             padding: 0;
-            overflow: hidden;
+            box-sizing: border-box;
         }
         body {
             display: flex;
@@ -16,17 +16,21 @@
             justify-content: center;
             height: 100vh;
             background: black;
+            overflow: hidden;
         }
         video {
             position: absolute;
+            top: 50%;
+            left: 50%;
             width: 98%;
             height: 100%;
+            transform: translate(-50%, -50%);
             object-fit: cover;
         }
     </style>
 </head>
 <body>
-    <video autoplay loop muted>
+    <video autoplay loop muted playsinline>
         <source src="https://github.com/dandan-187/bgmoon/raw/main/bgnote.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
